@@ -4,8 +4,9 @@ public class ArrayCreation {
             return 0.0;
         }
         else{
-            double total = numbers[0] + numbers.length/2 + numbers.length-1;
+            double total = (numbers[0] + numbers[numbers.length/2])+ numbers[numbers.length-1];
             total = total/3;
+            total = (total * 100 + 0.5)/100;
             return total;
         }
 
@@ -18,6 +19,7 @@ public class ArrayCreation {
         else {
             blank += friends[0].length() +" " + friends[1].length() +" " + friends[2].length() +" " + friends[3].length() +" "+ friends[4].length();
             return blank;
+
         }
     }
     public static String countryData() {
